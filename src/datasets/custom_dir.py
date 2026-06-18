@@ -5,7 +5,7 @@ import torch
 from PIL import Image
 from torch.utils.data import Dataset
 
-from to_my.project_dl_homework_final_clean.lensless_helpers.preprocessor import get_dataset_object, get_roi
+from lensless_helpers.preprocessor import get_dataset_object, get_roi
 
 
 class CustomDirDataset(Dataset):

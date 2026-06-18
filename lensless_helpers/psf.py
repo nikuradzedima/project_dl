@@ -2,8 +2,8 @@ import torch
 import numpy as np
 from waveprop.devices import slm_dict
 
-from to_my.project_dl_homework_final_clean.lensless_helpers.sensor import VirtualSensor
-from to_my.project_dl_homework_final_clean.lensless_helpers.slm import get_programmable_mask, get_intensity_psf
+from lensless_helpers.sensor import VirtualSensor
+from lensless_helpers.slm import get_programmable_mask, get_intensity_psf
 
 
 def get_psf(

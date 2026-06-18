@@ -1,4 +1,4 @@
-from to_my.project_dl_homework_final_clean.src.utils.init_utils import (
+from src.utils.init_utils import (
     set_random_seed,
     setup_experiment_dir,
     setup_logging,

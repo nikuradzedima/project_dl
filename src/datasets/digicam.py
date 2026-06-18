@@ -1,10 +1,10 @@
 import numpy as np
 import torch
-from to_my.project_dl_homework_final_clean.src.datasets import load_dataset
+from datasets import load_dataset
 from huggingface_hub import hf_hub_download
 from torch.utils.data import Dataset
 
-from to_my.project_dl_homework_final_clean.lensless_helpers.preprocessor import get_dataset_object, get_roi
+from lensless_helpers.preprocessor import get_dataset_object, get_roi
 
 
 class DigiCamDataset(Dataset):

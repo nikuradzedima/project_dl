@@ -4,9 +4,9 @@ import hydra
 from PIL import Image
 from torchvision.transforms.functional import pil_to_tensor
 
-from to_my.project_dl_homework_final_clean.src.datasets import CustomDirDataset
-from to_my.project_dl_homework_final_clean.src.metrics.image import LPIPSMetric, MSEMetric, PSNRMetric, SSIMMetric
-from to_my.project_dl_homework_final_clean.src.utils.init_utils import setup_quiet_external_logging
+from src.datasets import CustomDirDataset
+from src.metrics.image import LPIPSMetric, MSEMetric, PSNRMetric, SSIMMetric
+from src.utils.init_utils import setup_quiet_external_logging
 
 
 def load_rgb(path):

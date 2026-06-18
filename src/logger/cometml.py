@@ -4,7 +4,7 @@ from datetime import datetime
 import comet_ml
 from dotenv import load_dotenv
 
-from to_my.project_dl_homework_final_clean.src.utils.io_utils import ROOT_PATH
+from src.utils.io_utils import ROOT_PATH
 
 
 class CometMLWriter:

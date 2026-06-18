@@ -7,8 +7,8 @@ from hydra.utils import instantiate
 from PIL import Image
 from tqdm.auto import tqdm
 
-from to_my.project_dl_homework_final_clean.src.datasets.data_utils import get_dataloaders
-from to_my.project_dl_homework_final_clean.src.utils.init_utils import set_random_seed, setup_quiet_external_logging
+from src.datasets.data_utils import get_dataloaders
+from src.utils.init_utils import set_random_seed, setup_quiet_external_logging
 
 warnings.filterwarnings("ignore", category=UserWarning)
 

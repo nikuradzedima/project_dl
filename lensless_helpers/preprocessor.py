@@ -3,8 +3,8 @@ import warnings
 import numpy as np
 import cv2
 
-from to_my.project_dl_homework_final_clean.lensless_helpers.psf import simulate_psf_from_mask
-from to_my.project_dl_homework_final_clean.lensless_helpers.utils import resize
+from lensless_helpers.psf import simulate_psf_from_mask
+from lensless_helpers.utils import resize
 
 
 ALIGNMENT = {}

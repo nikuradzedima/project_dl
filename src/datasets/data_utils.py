@@ -3,8 +3,8 @@ from itertools import repeat
 from hydra.utils import instantiate
 from omegaconf import OmegaConf
 
-from to_my.project_dl_homework_final_clean.src.datasets.collate import collate_fn
-from to_my.project_dl_homework_final_clean.src.utils.init_utils import set_worker_seed
+from src.datasets.collate import collate_fn
+from src.utils.init_utils import set_worker_seed
 
 
 def inf_loop(dataloader):

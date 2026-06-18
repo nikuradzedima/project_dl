@@ -5,7 +5,7 @@ import torch
 from torch.nn.utils import clip_grad_norm_
 from tqdm.auto import tqdm
 
-from to_my.project_dl_homework_final_clean.src.datasets.data_utils import inf_loop
+from src.datasets.data_utils import inf_loop
 
 
 class RunningAverage:

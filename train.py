@@ -6,9 +6,9 @@ import torch
 from hydra.utils import instantiate
 from omegaconf import OmegaConf
 
-from to_my.project_dl_homework_final_clean.src.datasets.data_utils import get_dataloaders
-from to_my.project_dl_homework_final_clean.src.trainer import ReconstructionTrainer
-from to_my.project_dl_homework_final_clean.src.utils.init_utils import set_random_seed, setup_experiment_dir, setup_logging
+from src.datasets.data_utils import get_dataloaders
+from src.trainer import ReconstructionTrainer
+from src.utils.init_utils import set_random_seed, setup_experiment_dir, setup_logging
 
 warnings.filterwarnings("ignore", category=UserWarning)
 

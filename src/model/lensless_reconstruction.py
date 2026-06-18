@@ -1,7 +1,7 @@
 from torch import nn
 
-from to_my.project_dl_homework_final_clean.src.model.drunet import DRUNet
-from to_my.project_dl_homework_final_clean.src.model.fft_admm import UnrolledADMM
+from src.model.drunet import DRUNet
+from src.model.fft_admm import UnrolledADMM
 
 
 class LenslessReconstructionModel(nn.Module):

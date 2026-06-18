@@ -2,8 +2,8 @@ import numpy as np
 from enum import Enum
 from cv2 import resize
 
-from to_my.project_dl_homework_final_clean.lensless_helpers.utils import rgb2gray
-from to_my.project_dl_homework_final_clean.lensless_helpers.utils import load_image
+from lensless_helpers.utils import rgb2gray
+from lensless_helpers.utils import load_image
 
 
 class SensorOptions(Enum):

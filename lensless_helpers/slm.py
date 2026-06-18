@@ -2,7 +2,7 @@ import os
 import numpy as np
 from scipy.ndimage import rotate as rotate_func
 
-from to_my.project_dl_homework_final_clean.lensless_helpers.utils import get_ctypes
+from lensless_helpers.utils import get_ctypes
 from slm_controller.hardware import SLMParam, slm_devices
 
 

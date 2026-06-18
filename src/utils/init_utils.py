@@ -9,7 +9,7 @@ import torch
 from dotenv import load_dotenv
 from omegaconf import OmegaConf
 
-from to_my.project_dl_homework_final_clean.src.utils.io_utils import ROOT_PATH
+from src.utils.io_utils import ROOT_PATH
 
 
 def setup_quiet_external_logging():

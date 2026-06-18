@@ -8,8 +8,8 @@ from hydra.utils import instantiate
 from torch.utils.data import DataLoader
 from tqdm.auto import tqdm
 
-from to_my.project_dl_homework_final_clean.src.datasets.collate import collate_fn
-from to_my.project_dl_homework_final_clean.src.utils.init_utils import set_random_seed, setup_quiet_external_logging
+from src.datasets.collate import collate_fn
+from src.utils.init_utils import set_random_seed, setup_quiet_external_logging
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
