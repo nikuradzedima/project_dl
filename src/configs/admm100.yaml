@@ -1,0 +1,29 @@
+defaults:
+  - model: admm100
+  - datasets: digicam
+  - dataloader: default
+  - metrics: image
+  - _self_
+
+dataloader:
+  batch_size: 1
+  eval_batch_size: 1
+  num_workers: 2
+  pin_memory: true
+  persistent_workers: true
+
+trainer:
+  seed: 1
+  device: auto
+  max_eval_batches: 100
+  device_tensors: ["lensless", "psf", "lensed", "lensed_roi"]
+
+loss:
+  _target_: src.loss.ReconstructionLoss
+  mse_weight: 1.0
+  lpips_weight: 0.0
+  auxiliary_weight: 0.0
+  lpips_net: vgg
+
+evaluation:
+  checkpoint_path: null

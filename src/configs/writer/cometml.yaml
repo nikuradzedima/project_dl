@@ -1,0 +1,5 @@
+_target_: src.logger.CometMLWriter
+project_name: dl-project
+workspace: dimadmitrij734
+run_name: leadmm5_prepost_exp
+mode: online

@@ -1,0 +1,15 @@
+train:
+  _target_: src.datasets.DigiCamDataset
+  split: train
+  repo_id: bezzam/DigiCam-Mirflickr-MultiMask-10K
+  cache_dir: ${oc.env:HF_DATASETS_CACHE,null}
+  mask_cache_dir: ${oc.env:HF_HOME,null}
+  limit: null
+
+test:
+  _target_: src.datasets.DigiCamDataset
+  split: test
+  repo_id: bezzam/DigiCam-Mirflickr-MultiMask-10K
+  cache_dir: ${oc.env:HF_DATASETS_CACHE,null}
+  mask_cache_dir: ${oc.env:HF_HOME,null}
+  limit: null

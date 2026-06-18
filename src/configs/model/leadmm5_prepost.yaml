@@ -1,0 +1,9 @@
+_target_: src.model.LenslessReconstructionModel
+num_iterations: 5
+learnable_admm: true
+use_preprocessor: true
+use_postprocessor: true
+pre_channels: [32, 64, 128, 256]
+post_channels: [32, 64, 128, 256]
+init_mu: 1e-4
+init_tau: 2e-4

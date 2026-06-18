@@ -1,0 +1,41 @@
+defaults:
+  - model: leadmm5_post
+  - writer: cometml
+  - datasets: digicam
+  - dataloader: default
+  - metrics: image
+  - _self_
+
+writer:
+  run_name: leadmm5_post_exp
+
+trainer:
+  seed: 1
+  device: auto
+  n_epochs: 10
+  epoch_len: 1000
+  total_steps: 10000
+  log_step: 25
+  eval_step: 1000
+  max_eval_batches: 100
+  image_log_step: 500
+  save_step: 2000
+  max_grad_norm: 1.0
+  save_dir: saved
+  override: false
+  device_tensors: ["lensless", "psf", "lensed", "lensed_roi"]
+
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 1e-4
+  weight_decay: 1e-6
+
+loss:
+  _target_: src.loss.ReconstructionLoss
+  mse_weight: 1.0
+  lpips_weight: 0.02
+  auxiliary_weight: 0.1
+  lpips_net: vgg
+
+evaluation:
+  checkpoint_path: null

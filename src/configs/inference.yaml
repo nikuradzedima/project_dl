@@ -1,0 +1,19 @@
+defaults:
+  - model: leadmm5_prepost
+  - datasets: custom_dir
+  - dataloader: default
+  - _self_
+
+inferencer:
+  seed: 1
+  device: auto
+  checkpoint_path: saved/leadmm5_prepost_exp/model_best.pth
+  output_dir: outputs/reconstructions
+  device_tensors: ["lensless", "psf"]
+
+dataloader:
+  batch_size: 1
+  eval_batch_size: 1
+  num_workers: 0
+  pin_memory: false
+  persistent_workers: false

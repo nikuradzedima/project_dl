@@ -1,0 +1,4 @@
+inference:
+  - _target_: src.metrics.PSNRMetric
+  - _target_: src.metrics.MSEMetric
+  - _target_: src.metrics.SSIMMetric
